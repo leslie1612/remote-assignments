@@ -150,17 +150,20 @@ footer {
   align-items: center;
   background-color: rgb(235, 235, 235);
 }
-.footer-title {
+p.footer-title {
   font-size: 1.2rem;
   padding: 1rem 3rem;
   margin: 0.2rem;
   border-right: 6px solid black;
+  flex: 1 60px;
 }
 address {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 80%;
+  flex: 4;
+  margin: 10px;
 }
 address a {
   display: flex;
@@ -189,7 +192,7 @@ address p {
   }
 
   /* footer */
-  .footer-title {
-    padding: 0.2rem;
+  address {
+    justify-content: flex-start;
   }
 }
