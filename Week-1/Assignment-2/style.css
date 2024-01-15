@@ -152,16 +152,14 @@ footer {
 }
 p.footer-title {
   font-size: 1.2rem;
-  padding: 1rem 3rem;
   margin: 0.2rem;
   border-right: 6px solid black;
-  flex: 1 60px;
+  flex: 1;
 }
 address {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 80%;
   flex: 4;
   margin: 10px;
 }
@@ -177,7 +175,7 @@ address p {
   margin: 1rem;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 660px) {
   /* header */
   nav {
     margin: auto;
@@ -192,7 +190,13 @@ address p {
   }
 
   /* footer */
-  address {
-    justify-content: flex-start;
+  footer {
+    display: block;
+  }
+  p.footer-title {
+    border: 0;
+  }
+  address a {
+    display: block;
   }
 }
