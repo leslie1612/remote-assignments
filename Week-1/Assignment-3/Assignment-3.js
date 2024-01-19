@@ -14,18 +14,7 @@ function countAandB(input) {
 function toNumber(input) {
   // your code here
   return input.map((str) => {
-    switch (str.charCodeAt()) {
-      case 97:
-        return 1;
-      case 98:
-        return 2;
-      case 99:
-        return 3;
-      case 100:
-        return 4;
-      case 101:
-        return 5;
-    }
+    return str.charCodeAt() - 96;
   });
 }
 
