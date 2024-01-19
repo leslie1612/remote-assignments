@@ -13,17 +13,17 @@ function countAandB(input) {
 // toNumber: convert English letters to numbers, let ‘a’ to be 1, ‘b’ to be 2, and so on.
 function toNumber(input) {
   // your code here
-  return input.map((i) => {
-    switch (i) {
-      case "a":
+  return input.map((str) => {
+    switch (str.charCodeAt()) {
+      case 97:
         return 1;
-      case "b":
+      case 98:
         return 2;
-      case "c":
+      case 99:
         return 3;
-      case "d":
+      case 100:
         return 4;
-      case "e":
+      case 101:
         return 5;
     }
   });
