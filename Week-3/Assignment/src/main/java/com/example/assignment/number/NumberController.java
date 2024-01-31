@@ -1,4 +1,4 @@
-package com.example.assignment.Number;
+package com.example.assignment.number;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
