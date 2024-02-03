@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 th:text="${result}"></h1>
+
+    <h2>Sign in</h2>
+    <form action="/signin" method="POST" id="sign_in">
+        <label for="signInEmail">Email:</label>
+        <input type="email" name="email" id="signInEmail">
+        <label for="signInPassword">Password:</label>
+        <input type="password" name="password" id="signInPassword">
+        <button type="submit">submit</button>
+    </form>
+
+    <h2>Sign up</h2>
+    <form action="/signup" method="POST" id="sign_up">
+        <label for="signUpEmail">Email:</label>
+        <input type="email" name="email" id="signUpEmail" required="required">
+        <label for="signUpPassword">Password:</label>
+        <input type="password" name="password" id="signUpPassword" required="required">
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
